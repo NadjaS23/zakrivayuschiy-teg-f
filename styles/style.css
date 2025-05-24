@@ -55,7 +55,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 50px; 
+  gap: 50px;
   align-items: center;
   margin: 100px auto;
 }
@@ -129,7 +129,7 @@
   display: flex;
   justify-content: end;
   align-items: flex-start;
-  gap: 4px;      
+  gap: 4px;
   margin: 27px 25px 25px 0;
 }
 
@@ -212,7 +212,7 @@
 /*Кнопка «Сохранить на память»*/
 .card__save-button {
   gap: 8px;
-  inline-size: 339px; 
+  inline-size: 339px;
   block-size: 55px;
 }
 
