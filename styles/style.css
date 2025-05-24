@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family), sans-serif;
-  font-variation-settings: var(--font-weight-card-text) var(--font-weight-card-title);
+  font-variation-settings: var(--font-weight-card-text);
   color: var(--main-color);
   background-image: var(--background-image);
   background-position: center;
@@ -93,7 +93,7 @@
 
 .card__label {
   position: absolute;
-  font-family: var(--accent-font-family), fantasy;
+  font-family: var(--accent-font-family);
   font-weight: var(--font-weight-card-text);
   font-size: 14px;
   top: 25px;
@@ -139,7 +139,6 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
-  /*inline-size: 40px;*/
   block-size: 38px;
   transition: border 0.3s ease;
 }
@@ -203,7 +202,7 @@
 .button__text {
   position: relative;
   font-size: 14px;
-  font-family: var(--accent-font-family), fantasy;
+  font-family: var(--accent-font-family);
   font-weight: var(--font-weight-card-text);
   color: var(--button-text-color);
   mix-blend-mode: difference;
@@ -214,7 +213,7 @@
 .card__save-button {
   gap: 8px;
   inline-size: 339px; 
-  block-size: 55px; 
+  block-size: 55px;
 }
 
 .diskette-icon {
