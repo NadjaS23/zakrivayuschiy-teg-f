@@ -72,7 +72,7 @@
   text-align: left;
   padding-inline: 10px;
   padding-block: 5px 4px;
-  font-variation-settings: var(--font-weight-card-title);
+  font-variation-settings: "wght" var(--font-weight-card-title);
 }
 
 .card__text {
@@ -87,8 +87,9 @@
 /*обертка для позиционирования картинки и лэйбла*/
 .card__image-label {
   position: relative;
-  max-block-size: 696px;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
+  border-block-end: 2px solid var(--main-color);
+  border-block-start: 2px solid var(--main-color);
 }
 
 .card__label {
@@ -100,15 +101,14 @@
   right: 25px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px #fff;
-  text-shadow: 0 0 1px #fff;
+  text-shadow: 1px #fff;
 }
 
 @supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .card__label {
+    text-shadow: none;
     -webkit-text-stroke: 1px #fff;
     text-stroke: 1px #fff;
-    text-shadow: none;
   }
 } 
 
@@ -120,8 +120,6 @@
   inline-size: 100%;
   block-size: 100%;
   aspect-ratio: 1 / 1;   /*соотношение ширины к высоте*/
-  border-block-end: 2px solid var(--main-color);
-  border-block-start: 2px solid var(--main-color);
 }
 
 /*обертка для области кнопок карточки*/
@@ -225,7 +223,7 @@
 }
 
 /* модальное окно */
-.modal-w[open] {
+.modal[open] {
   display: grid;
   gap: 30px;
   max-inline-size: 353px;
@@ -233,20 +231,20 @@
   padding: 30px;
 }
 
-.modal-w__content {
+.modal__content {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
 
-.modal-w__diskette-icon {
+.modal__diskette-icon {
   inline-size: 39px;
   block-size: 39px;
   flex-shrink: 0;
 }
 
-.modal-w__title {
+.modal__title {
   text-transform: uppercase;
   line-height: 150%;
 }
@@ -263,10 +261,6 @@ dialog::backdrop {
 } 
 
 @media (width <= 375px) {
-  .card__image-label {
-    max-block-size: 375px;
-  }
-
   .card__image {
     max-inline-size: 375px;
   }
@@ -275,7 +269,7 @@ dialog::backdrop {
     right: 13px;
   }
 
-  .modal-w[open] {
+  .modal[open] {
     padding: 30px 40px;
     max-inline-size: 341px;
   }
