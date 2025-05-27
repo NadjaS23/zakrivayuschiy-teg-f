@@ -38,7 +38,7 @@
 }
 
 .header__logo {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-weight: var(--font-weight-card-text);
   font-size: clamp(3.063rem, 1.91rem + 4.923vw, 4.063rem);
   text-transform: uppercase;
@@ -46,7 +46,7 @@
 }
 
 .header__title {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   text-transform: uppercase;
 }
@@ -94,7 +94,7 @@
 
 .card__label {
   position: absolute;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-weight: var(--font-weight-card-text);
   font-size: 14px;
   top: 25px;
@@ -200,7 +200,7 @@
 .button__text {
   position: relative;
   font-size: 14px;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-weight: var(--font-weight-card-text);
   color: var(--button-text-color);
   mix-blend-mode: difference;
